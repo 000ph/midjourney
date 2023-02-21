@@ -39,7 +39,7 @@ export interface PromptOptions {
   /**
    * Scale for classifier-free guidance. Range: 1 to 20
    */
-  guidance_scale: IntRange<1, 20>;
+  guidance_scale?: IntRange<1, 20>;
   /**
    *
    * Random seed. Leave blank to randomize the seed
