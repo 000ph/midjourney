@@ -4,12 +4,12 @@ module.exports = {
   MODEL_NAME: "prompthero/openjourney",
 
   DEFAULT_OPTIONS: {
-    guidance_scale: "7",
+    guidance_scale: 6,
     width: 512,
     height: 512,
     num_inference_steps: 50,
     num_outputs: 1,
     seed: null,
   },
-  TIMEOUT: 10,
+  TIMEOUT: 30,
 };
