@@ -1,6 +1,6 @@
 import { PromptOptions } from "./Request";
 
-class Midjourney {
+export class Midjourney {
   public version: string;
   public name: string;
   public baseUri: string;
@@ -13,10 +13,8 @@ class Midjourney {
     seed: null;
   };
 
-  async getAcessToken(): Promise<string>;
+  getAcessToken(): Promise<string>;
 
-  async predict(token: string, options: PromptOptions): Promise<string[]>;
-  async imagine(options: PromptOptions): Promise<string[]>;
+  predict(token: string, options: PromptOptions): Promise<string[]>;
+  imagine(options: PromptOptions): Promise<string[]>;
 }
-
-export { Midjourney };
