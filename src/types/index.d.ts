@@ -1,6 +1,6 @@
 import { PromptOptions } from "./Request";
 
-export class Midjourney {
+export class MidjourneyClient {
   public version: string;
   public name: string;
   public baseUri: string;
